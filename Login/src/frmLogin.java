@@ -9,6 +9,8 @@ public class frmLogin extends javax.swing.JFrame {
      */
     public frmLogin() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        
     }
    public void borrar(){
        txtid.setText("");
@@ -176,8 +178,10 @@ public class frmLogin extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null,"Welcome to the system");
                 dispose();
                 //Crear un nuevo formulario que abra el menú
-                menu menu = new menu();
-                menu.setVisible(true);
+                //menu menu = new menu();
+                //menu.setVisible(true);
+                Loading carga = new Loading();
+                carga.setVisible(true);
                 
                 
             }
